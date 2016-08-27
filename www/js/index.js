@@ -46,7 +46,7 @@ function onCheckPermissions(statuses){
         var $permission = $('#permissions .'+permission),
             status = statuses[permission];
         $permission.find('.status').text(underscoreToSpace(status));
-        if(status == "GRANTED" || status == "DENIED_ALWAYS"){
+        if(status == cordova.plugins.diagnostic.runtimePermissionStatus.GRANTED || status == cordova.plugins.diagnostic.runtimePermissionStatus.DENIED_ALWAYS){
             $permission.find('button').hide();
         }
     }
