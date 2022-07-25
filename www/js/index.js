@@ -14,7 +14,7 @@ function onDeviceReady() {
 
 function init(){
     var $permissions = $('#permissions');
-    for(var permission in cordova.plugins.diagnostic.runtimePermission){
+    for(var permission in cordova.plugins.diagnostic.permission){
         var $permission = $('#template .permission').clone();
         $permission.addClass(permission);
         $permission.find('.name').text(underscoreToSpace(permission));
@@ -46,7 +46,7 @@ function onCheckPermissions(statuses){
         var $permission = $('#permissions .'+permission),
             status = statuses[permission];
         $permission.find('.status').text(underscoreToSpace(status));
-        if(status == cordova.plugins.diagnostic.runtimePermissionStatus.GRANTED || status == cordova.plugins.diagnostic.runtimePermissionStatus.DENIED_ALWAYS){
+        if(status === cordova.plugins.diagnostic.permissionStatus.GRANTED || status === cordova.plugins.diagnostic.permissionStatus.DENIED_ALWAYS){
             $permission.find('button').hide();
         }
     }

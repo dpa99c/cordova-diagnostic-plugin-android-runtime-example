@@ -1,0 +1,22 @@
+{
+  "dependencies": {
+    "cordova-custom-config": "5.1.1",
+    "cordova-plugin-device": "2.1.0",
+    "cordova-plugin-dialogs": "2.0.2"
+  },
+  "cordova": {
+    "plugins": {
+      "cordova-custom-config": {},
+      "cordova-plugin-dialogs": {},
+      "cordova-plugin-device": {},
+      "cordova.plugins.diagnostic": {}
+    },
+    "platforms": [
+      "android"
+    ]
+  },
+  "devDependencies": {
+    "cordova-android": "^11.0.0",
+    "cordova.plugins.diagnostic": "file:../cordova-diagnostic-plugin"
+  }
+}
