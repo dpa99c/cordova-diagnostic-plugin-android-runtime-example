@@ -3,14 +3,6 @@ Cordova/Phonegap Diagnostic Plugin Example
 
 This repo contains an example project which illustrates use of the [Diagnostic Cordova/Phonegap plugin](https://github.com/dpa99c/cordova-diagnostic-plugin) to request Android runtime permissions.
 
-## Contents
-* [Android runtime permissions](#android-runtime-permissions)
-* [Downloading](#downloading)
-* [Building and running](#building-and-running)
-* [Pre-built app](#pre-built-app)
-* [Screenshots](#screenshots)
-* [License](#license)
-
 # Android runtime permissions
 
 Android 6 / API 23 introduced the concept of [runtime permissions](http://developer.android.com/training/permissions/requesting.html). Similar to iOS, certain "dangerous" permissions must be requested at runtime __in addition__ to being listed in the Android manifest.
