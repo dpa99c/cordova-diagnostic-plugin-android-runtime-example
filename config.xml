@@ -15,8 +15,7 @@
     <plugin name="cordova.plugins.diagnostic" version="*" />
 
     <platform name="android">
-        <preference name="android-minSdkVersion" value="22" />
-        <preference name="android-targetSdkVersion" value="32" />
+        <preference name="android-targetSdkVersion" value="33" />
         <config-file parent="/*" target="AndroidManifest.xml">
             <uses-permission android:name="android.permission.ACCEPT_HANDOVER" />
             <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" />
